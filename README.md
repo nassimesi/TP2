@@ -6,4 +6,4 @@
 
 ## TP2 - Programmation Par Contraintes
 
-Lien classroom : https://classroom.github.com/g/whSKxuFS
+Lien classroom :
