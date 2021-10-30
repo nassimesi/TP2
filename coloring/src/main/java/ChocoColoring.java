@@ -17,7 +17,7 @@ public class ChocoColoring {
         IntVar[] regions;
 
         Model model;
-        static File fin = new File(".\\coloring\\src\\main\\resources\\datasets\\g1.col");
+        static File fin = new File(".\\coloring\\src\\main\\resources\\datasets\\g6.col");
         static Scanner a;
 
     static {
@@ -87,10 +87,10 @@ public class ChocoColoring {
             }
 
             //add constraints
-            while (a.hasNextLine()){
+            while (a.hasNextLine() && a.hasNextInt()){
                 int c = a.nextInt();
                 int d = a.nextInt();
-                System.out.println(c +" and "+d);
+                //System.out.println(c +" and "+d);
                 regions[c-1].ne(regions[d-1]).post();
             }
 

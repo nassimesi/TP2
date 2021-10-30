@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/coloring.iml" filepath="$PROJECT_DIR$/coloring.iml" />
+      <module fileurl="file://$PROJECT_DIR$/TP2.iml" filepath="$PROJECT_DIR$/TP2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/coloring/coloring.iml" filepath="$PROJECT_DIR$/coloring/coloring.iml" />
     </modules>
   </component>
 </project>
