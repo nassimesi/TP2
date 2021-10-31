@@ -3,11 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="b5306cb3-7ceb-429b-bf98-a6650e314298" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/coloring/src/main/java/ChocoColoring.java" beforeDir="false" afterPath="$PROJECT_DIR$/coloring/src/main/java/question2_3/ChocoColoring.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/coloring/src/main/java/mColoringProblem.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/coloring/target/classes/ChocoColoring.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/coloring/target/classes/ColoringProblem.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/coloring/target/classes/META-INF/coloring.kotlin_module" beforeDir="false" afterPath="$PROJECT_DIR$/coloring/target/classes/META-INF/coloring.kotlin_module" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coloring/src/main/java/question1/backtrack/GraphColoringBackTracking.java" beforeDir="false" afterPath="$PROJECT_DIR$/coloring/src/main/java/question1/backtrack/GraphColoringBackTracking.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coloring/src/main/java/question2_3/ChocoColoring.java" beforeDir="false" afterPath="$PROJECT_DIR$/coloring/src/main/java/question2_3/ChocoColoring.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coloring/target/classes/question1/backtrack/GraphColoringBackTracking.class" beforeDir="false" afterPath="$PROJECT_DIR$/coloring/target/classes/question1/backtrack/GraphColoringBackTracking.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coloring/target/classes/question2_3/ChocoColoring.class" beforeDir="false" afterPath="$PROJECT_DIR$/coloring/target/classes/question2_3/ChocoColoring.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -24,12 +23,6 @@
         <option value="Class" />
       </list>
     </option>
-  </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>instance</find>
-      <find>count is</find>
-    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -79,7 +72,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.GraphColoringBackTracking">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="ChocoColoring" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="question2_3.ChocoColoring" />
       <module name="coloring" />
@@ -107,10 +100,24 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="question4.Main" />
+      <module name="coloring" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="question4.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.GraphColoringBackTracking" />
+        <item itemvalue="Application.Main" />
         <item itemvalue="Application.ChocoColoring" />
+        <item itemvalue="Application.GraphColoringBackTracking" />
         <item itemvalue="Application.ColoringProblem" />
       </list>
     </recent_temporary>
@@ -126,7 +133,7 @@
       <option name="presentableId" value="Default" />
       <updated>1635542854907</updated>
       <workItem from="1635542856313" duration="7533000" />
-      <workItem from="1635706660943" duration="659000" />
+      <workItem from="1635706660943" duration="3074000" />
     </task>
     <servers />
   </component>

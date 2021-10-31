@@ -1,6 +1,5 @@
 package question1.backtrack;
 
-import java.io.File;
 import java.util.ArrayList;
 
 public class GraphColoringBackTracking {

@@ -3,12 +3,9 @@ package question2_3;
 import org.apache.commons.cli.*;
 import org.chocosolver.solver.Model;
 import org.chocosolver.solver.variables.IntVar;
-
-import java.io.*;
+import java.io.File;
+import java.io.FileNotFoundException;
 import java.util.Scanner;
-
-import static org.chocosolver.solver.search.strategy.Search.minDomLBSearch;
-import static org.chocosolver.util.tools.ArrayUtils.append;
 
 public class ChocoColoring {
         static int n;
@@ -19,20 +16,38 @@ public class ChocoColoring {
         IntVar[] regions;
 
         Model model;
-        static File fin = new File(".\\coloring\\src\\main\\resources\\datasets\\g14.col");
+        public static File fin ;
         static Scanner a;
 
-    static {
+
+    public static void start(){
         try {
             a = new Scanner(fin);
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }
-    }
 
+        String firstLine = a.nextLine();
+        while (!firstLine.startsWith("@")) {
+            firstLine = a.nextLine();
+        }
+
+        firstLine = firstLine.substring(2,firstLine.length());
+        instance = Integer.parseInt(firstLine.split(" ")[0]);
+        s = Integer.parseInt(firstLine.split(" ")[1]);
+
+
+        n = instance;
+        //s = (int) Math.sqrt(n);
+    }
 
     public static void main(String[] args) throws ParseException, FileNotFoundException {
 
+        try {
+            a = new Scanner(fin);
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
             final Options options = configParameters();
             final CommandLineParser parser = new DefaultParser();
             final CommandLine line = parser.parse(options, args);
@@ -49,7 +64,7 @@ public class ChocoColoring {
             while (!firstLine.startsWith("@")) {
                 firstLine = a.nextLine();
             }
-        System.out.println("hello there");
+
             firstLine = firstLine.substring(2,firstLine.length());
             instance = Integer.parseInt(firstLine.split(" ")[0]);
             s = Integer.parseInt(firstLine.split(" ")[1]);
@@ -71,16 +86,14 @@ public class ChocoColoring {
             model.getSolver().showStatistics();
             model.getSolver().solve();
 
-            StringBuilder st = new StringBuilder(String.format("Sudoku -- %s\n", instance, " X ", instance));
+            StringBuilder st = new StringBuilder(String.format("Coloring -- %s\n", instance, " X ", instance));
             st.append("\t");
             for (int i = 0; i < n; i++) {
-                for (int j = 0; j < n; j++) {
-                    st.append(regions[i]).append("\t\t\t");
-                }
+                st.append(regions[i]).append("\t\t\t");
                 st.append("\n\t");
             }
 
-            System.out.println(st.toString());
+           // System.out.println(st.toString());
         }
 
         public void buildModel() {
@@ -143,11 +156,6 @@ public class ChocoColoring {
             return options;
         }
 
-        public void configureSearch() {
-            model.getSolver().setSearch(minDomLBSearch(append(regions)));
 
-        }
-
-
-    }
+}
 
