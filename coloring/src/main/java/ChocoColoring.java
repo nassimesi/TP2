@@ -17,7 +17,7 @@ public class ChocoColoring {
         IntVar[] regions;
 
         Model model;
-        static File fin = new File(".\\coloring\\src\\main\\resources\\datasets\\g6.col");
+        static File fin = new File(".\\coloring\\src\\main\\resources\\datasets\\g14.col");
         static Scanner a;
 
     static {
@@ -44,8 +44,11 @@ public class ChocoColoring {
 
 
             String firstLine = a.nextLine();
+            while (!firstLine.startsWith("@")) {
+                firstLine = a.nextLine();
+            }
+        System.out.println("hello there");
             firstLine = firstLine.substring(2,firstLine.length());
-
             instance = Integer.parseInt(firstLine.split(" ")[0]);
             s = Integer.parseInt(firstLine.split(" ")[1]);
 
