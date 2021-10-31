@@ -37,7 +37,7 @@ public class Main {
         * Result :
         * Backtracking: PT0S
         * Choco solver: PT0.538S
-        * 
+        *
         * */
     }
 }

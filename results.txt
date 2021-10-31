@@ -1,0 +1,36 @@
+With the available colors the graph was not colorable
+Backtracking g1: PT0.078S
+Choco solver g1: PT0.625S
+--------------------------------------------------------------
+With the available colors the graph was colorable
+Backtracking g2: PT2.384S
+Choco solver g2: PT6.58S
+--------------------------------------------------------------
+With the available colors the graph was colorable
+Backtracking g5: PT0S
+Choco solver g5: PT0.626S
+--------------------------------------------------------------
+With the available colors the graph was colorable
+Backtracking g6: PT0.063S
+Choco solver g6: PT0.422S
+--------------------------------------------------------------
+With the available colors the graph was colorable
+Backtracking g7: PT0.016S
+Choco solver g7: PT51.469S
+--------------------------------------------------------------
+With the available colors the graph was colorable
+Backtracking g8: Time out
+Choco solver g8: Time out
+--------------------------------------------------------------
+With the available colors the graph was colorable
+Backtracking g12: PT0S
+Choco solver g12: PT0.671S
+--------------------------------------------------------------
+With the available colors the graph was not colorable
+Backtracking g13: PT0S
+Choco solver g13: PT0.266S
+--------------------------------------------------------------
+With the available colors the graph was colorable
+Backtracking g14: PT0.047S
+Choco solver g14: PT49.041S
+--------------------------------------------------------------

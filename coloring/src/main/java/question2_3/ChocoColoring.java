@@ -83,7 +83,7 @@ public class ChocoColoring {
         public void solve() {
 
             buildModel();
-            model.getSolver().showStatistics();
+           // model.getSolver().showStatistics();
             model.getSolver().solve();
 
             StringBuilder st = new StringBuilder(String.format("Coloring -- %s\n", instance, " X ", instance));
