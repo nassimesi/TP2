@@ -17,7 +17,7 @@ public class ChocoColoring {
         IntVar[] regions;
 
         Model model;
-        static File fin = new File(".\\coloring\\src\\main\\resources\\datasets\\g14.col");
+        static File fin = new File(".\\coloring\\src\\main\\resources\\datasets\\g1.col");
         static Scanner a;
 
     static {
@@ -69,7 +69,7 @@ public class ChocoColoring {
             model.getSolver().showStatistics();
             model.getSolver().solve();
 
-            StringBuilder st = new StringBuilder(String.format("Sudoku -- %s\n", instance, " X ", instance));
+            StringBuilder st = new StringBuilder(String.format("Coloring -- %s\n", instance, " X ", instance));
             st.append("\t");
             for (int i = 0; i < n; i++) {
                 for (int j = 0; j < n; j++) {
