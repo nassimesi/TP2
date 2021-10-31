@@ -16,7 +16,9 @@ public class ChocoColoring {
         IntVar[] regions;
 
         Model model;
+
         public static File fin ;
+
         static Scanner a;
 
 
