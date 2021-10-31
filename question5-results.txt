@@ -7,6 +7,14 @@ Backtracking g2: PT2.384S
 Choco solver g2: PT6.58S
 --------------------------------------------------------------
 With the available colors the graph was colorable
+Backtracking g3: Time out
+Choco solver g3: PT0.547S
+--------------------------------------------------------------
+With the available colors the graph was colorable
+Backtracking g4: Time out
+Choco solver g4: PT0.969S
+--------------------------------------------------------------
+With the available colors the graph was colorable
 Backtracking g5: PT0S
 Choco solver g5: PT0.626S
 --------------------------------------------------------------
@@ -23,6 +31,18 @@ Backtracking g8: Time out
 Choco solver g8: Time out
 --------------------------------------------------------------
 With the available colors the graph was colorable
+Backtracking g9: Time out
+Choco solver g9: Time out
+--------------------------------------------------------------
+With the available colors the graph was colorable
+Backtracking g10: Time out
+Choco solver g10: Time out
+--------------------------------------------------------------
+With the available colors the graph was colorable
+Backtracking g11: Time out
+Choco solver g11: Time out
+--------------------------------------------------------------
+With the available colors the graph was colorable
 Backtracking g12: PT0S
 Choco solver g12: PT0.671S
 --------------------------------------------------------------
@@ -34,3 +54,8 @@ With the available colors the graph was colorable
 Backtracking g14: PT0.047S
 Choco solver g14: PT49.041S
 --------------------------------------------------------------
+
+ils y a plusieurs instances la solution du backtrack a pris beaucoupe de temp sans avoir une resultat par contre le slover choco nous
+a donne une resultat.
+et pour les grandes instances le slover choco et la solution avec le backtrack ont pris beaucoupe de temp sans resultat. 
+le slover choco est outils puissant pour ces problemes.

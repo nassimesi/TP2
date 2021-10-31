@@ -20,10 +20,10 @@ public class Main {
 
         //can: 1-2-5-6-7-12-13-14
         //cant: 3-4-8-9-10-11-
-        for (int i = 8;i<9;i++){
+        for (int i = 9;i<10;i++){
             String file1 = ".\\coloring\\src\\main\\resources\\datasets\\g"+i+".col";
 
-           /* FileIO.readDataAndCreateGraphFromEdges(file1,graph);
+            /*FileIO.readDataAndCreateGraphFromEdges(file1,graph);
             Instant start = Instant.now();
             graphColoringBackTracking.colorGraph(graph);
             Instant end = Instant.now();
@@ -37,17 +37,5 @@ public class Main {
             System.out.println("Choco solver g"+i+": "+Duration.between(start1, end1));
             System.out.println("--------------------------------------------------------------");
         }
-
-
-        /*
-         *
-         * Result :
-         * Backtracking: Not colorable
-         * Choco solver: PT0.797S
-         *
-         * */
-
-
-
     }
 }
